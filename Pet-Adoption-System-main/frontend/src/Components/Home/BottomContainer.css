@@ -1,0 +1,26 @@
+.planning-container{
+    text-align: center;
+    margin: 70px;
+    
+}
+.planning-container h1{
+    text-decoration-line: underline;
+    font-size: 35px;
+    font-weight: 700;
+}
+.boxes-container{
+    display: flex;
+     margin: 70px;
+}
+
+@media (max-width: 992px) {
+  .boxes-container {
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    text-align: center;
+  }
+  .card-container {
+    max-width: auto;
+  }
+}

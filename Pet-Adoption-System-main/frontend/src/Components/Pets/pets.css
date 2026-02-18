@@ -1,0 +1,173 @@
+
+body {
+    font-family: "Varela Round", sans-serif;
+    color: #fea034;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+.pet-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+
+.pet-view-cards {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #fea034;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 310px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.pet-card-img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.pet-card-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.pet-card-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.pet-card-details h2 {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #fea034;
+}
+
+.pet-card-details p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+
+.show-interest-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.show-interest-btn button {
+    font-size: 14px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: #fea034;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-interest-btn button:hover {
+    background-color: #ff9317;
+}
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+
+.close-btn {
+    margin-top: 10px;
+    background-color: #fea034;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    background-color: #ff9317;
+}
+
+
+.filter-selection,
+.req-filter-selection,
+.filter-selection-service {
+    margin: 10px 0;
+    text-align: center;
+}
+
+select {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #fea034;
+    font-family: inherit;
+    font-size: 14px;
+    color: #fea034;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.oops-msg,
+.error-message {
+    text-align: center;
+    margin: 20px 0;
+    color: red;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .pet-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pet-view-cards {
+        max-width: 90%;
+    }
+
+    .pet-card-img img {
+        height: 200px;
+    }
+}

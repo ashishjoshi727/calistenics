@@ -1,0 +1,65 @@
+1.Authentication (Login & SignUp)
+
+    a. Website opens with a Login page.
+
+    b. Beside the login form → SignUp button (Name, Email, Password).
+
+    c. Admin Login option → credentials: username: admin, password: 123.
+
+    d. After login (User or Admin), redirect to their respective dashboards.
+
+2.Homepage (for users after login)
+
+    a. A button to redirect to Services page.
+
+    b.Services page has two sections:
+
+    c. Adopting a Pet
+
+       1. Button → redirects to Pets Page.
+
+       2. Pets are listed (with image, age, name, etc.).
+
+       3. User clicks Adopt button → adoption form opens → fill request.
+
+    d.Giving Your Pet for Adoption
+
+       1. Form with details: Pet Name, Age, Image, Owner’s Email & Phone.
+
+       2. Submitted request goes to Admin panel for approval.
+
+3.Admin Panel (after admin login)
+    Contains 4 sections:
+
+       a.Post Pet Requests
+
+            1. Shows new requests submitted by users.
+
+            2. Admin can Approve / Reject.
+
+            3. Approved → moves to "Approved Pets".
+
+        b. Approved Pets
+
+            1. Pets listed on website for adoption.
+
+            2. Admin can Delete if needed.
+
+        c. Adoption Requests
+
+            1. Shows people who want to adopt a pet.
+
+            2. Admin decides Approve / Reject based on suitability.
+
+        d. Adopted History
+
+            1. Shows pets that have been adopted (not listed anymore).
+
+            2. Admin can Delete History records.
+
+4. Navbar
+    Can  also use Navbar to naviaget
+        Home
+        services
+        pets
+        contact

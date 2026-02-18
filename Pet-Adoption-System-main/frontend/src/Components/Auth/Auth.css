@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background: #f6f5f7;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh 
+}
+
+.auth-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+              0 10px 10px rgba(0,0,0,0.22); 
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  
+}
+
+.form-cont {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 50px;
+  text-align: center;
+  background: #fff;
+}
+
+.form-cont input {
+  margin: 8px 0;
+  padding: 12px;
+  width: 100%;
+  background-color:#d9d9d9;
+  border-radius:10px;
+  border-style: none;
+}
+
+.form-cont a{
+    font-style: none;
+}
+
+.form-cont button {
+  margin-top: 12px;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 20px;
+  background: orange;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-in-container {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+ 
+  transition: all 0.6s ease-in-out;
+}
+
+/* Sign-up stays on the right */
+.sign-up-container {
+  position: absolute;
+  left: 0;  /* right half of container */
+  width: 50%;
+  height: 100%;
+  z-index: 1; 
+
+  opacity: 0;   /* hidden by default */
+  transition: opacity 0.6s ease-in-out;
+}
+
+
+
+.auth-container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Optional: hide sign-in if you want */
+.auth-container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+  opacity: 0;  /* optional */
+  z-index: 1;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.overlay {
+  background: orange;
+  background: linear-gradient(to right, #ff8008, #ffc837);
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+  display: flex;
+}
+
+.overlay button{
+  margin-top: 12px;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.overlay-panel h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.overlay-panel p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+  color: #fff; /* Because overlay background is colored */
+  text-align: center;
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+
+.overlay-left {
+  transform: translateX(0);
+  left: 0;
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.auth-container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.auth-container.right-panel-active .overlay {
+  transform: translateX(50%);
+}

@@ -1,0 +1,84 @@
+.adopt-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.adopt-section h2 {
+    font-family: "Varela Round", sans-serif;
+    padding-bottom: 10px;
+    color: orange;
+    border-bottom: 2px solid orange;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.adopt-section img {
+    margin: 15px 0;
+    max-width: 60%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.adopt-section p {
+    font-family: "Varela Round", sans-serif;
+    color: darkGrey;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.adopt-section h3 {
+    color: orange;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.adopt-section ul {
+    font-family: "Varela Round", sans-serif;
+    color: darkGrey;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.adopt-section ol {
+    font-family: "Varela Round", sans-serif;
+    color: darkGrey;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.button {
+
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.button:hover {
+    background-color: orange;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.adopt-section img {
+    margin: 15px 0;
+    max-width: 60%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.adopt-section ul {
+    font-family: "Varela Round", sans-serif;
+}
+
+.adopt-section ol {
+    font-family: "Varela Round", sans-serif;
+    color: darkGrey;
+    list-style: none;
+    padding-left: 20px;
+}

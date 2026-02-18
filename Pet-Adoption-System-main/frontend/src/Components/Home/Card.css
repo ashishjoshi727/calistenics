@@ -1,0 +1,13 @@
+.card-container{
+    margin:20px;
+}
+
+.card-container h2{
+    color:orange;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.card-container p{
+    font-size: 14px;
+}

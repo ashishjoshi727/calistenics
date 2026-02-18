@@ -1,0 +1,289 @@
+:root {
+  --darkGrey: #1f2130;
+  --purple: #9d60f2;
+  --hoverPurple: #7d3dd7;
+  --white: white;
+  --black: black;
+  --textGrey: rgb(243, 237, 237);
+  --yellow: #fbc256;
+  --darkYellow: #f7b842;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fbc256;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-time {
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+}
+
+.admin-footer {
+  background-color: #fbc256;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.admin-footer p {
+  margin: 0;
+}
+
+.login-body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 300px;
+  margin: auto auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.login-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  background-color: #fbc256;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #555;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+
+.admin-screen-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.admin-screen-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20vw;
+  min-width: 20vw;
+  padding: 25px;
+}
+
+.admin-screen-left h3 {
+  margin-bottom: 20px;
+}
+
+.admin-screen-left p {
+  font-weight: bold;
+  font-size: large;
+  color: #fbc256;
+  font-family: "Varela Round", sans-serif;
+  cursor: pointer;
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fbc256;
+}
+
+.admin-screen-left p:hover {
+  opacity: 0.8;
+ }
+
+.admin-screen-right {
+  border-left: 3px solid #fbc256;
+  padding: 0 4vw;
+  max-width: 80vw;
+  min-width: 80vw;
+}
+.req-containter {
+    Display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pet-view-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    border: 1px solid #fea034;
+    width: 310px;
+    background-color: white;
+}
+.show-interest-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.pet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.show-interest-btn button {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    margin: 10px 0;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    background-color: #fea034;
+}
+
+.app-rej-btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.app-rej-btn button {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    margin: 10px 0;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    background-color: #fea034;
+    min-width: 90px;
+}
+
+.show-interest-btn button:hover {
+    cursor: pointer;
+    background-color: #ff9317;
+}
+
+.app-rej-btn button:hover {
+    cursor: pointer;
+    background-color: #ff9317;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.custom-adopt-form-container {
+    text-align: center;
+    padding: 50px;
+}
+.form-child-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.clickable-pet-name {
+    display: inline;
+    cursor: pointer;
+    color: #fea034;
+}
+
+.form-card-details {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    padding: 5px 10px;
+}
+
+.form-card-details h2 {
+    font-family: "Varela Round", sans-serif;
+    color: #fea034;
+    text-align: center;
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.form-card-details p {
+    font-family: "Varela Round", sans-serif;
+    color: #fea034;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.req-filter-selection {
+    font-weight: bold;
+    padding: 6px 5px;
+    border-radius: 15px;
+    color: white;
+    background-color: #fea034;
+    border: none;
+}
+
+.req-filter-selection:hover {
+    cursor: pointer;
+    background-color: #ff9317;
+    border: none;
+}
+
+.req-filter-selection:focus {
+    outline: none;
+}
+
+.pet-card-details {
+    padding: 5px 10px;
+}
+
+.pet-card-details h2 {
+    font-family: "Varela Round", sans-serif;
+    color: #fea034;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.pet-card-details p {
+    font-family: "Varela Round", sans-serif;
+    color: #fea034;
+}
+
+.pet-card-pic {
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.pet-card-pic img {
+    width: 310px;
+    height: 180px;
+    object-fit: cover;
+}

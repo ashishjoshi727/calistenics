@@ -1,0 +1,163 @@
+.post-pet-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.post-pet-section img {
+    max-width: 60%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: "Varela Round", sans-serif;
+    color: orange;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.post-pet-section label {
+    font-family: "Varela Round", sans-serif;
+    color: orange;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-pet-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.post-pet-section h2 {
+    font-family: "Varela Round", sans-serif;
+    padding-bottom: 10px;
+    color: orange;
+    border-bottom: 2px solid orange;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.post-pet-section img {
+    max-width: 60%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.post-pet-section p {
+    font-family: "Varela Round", sans-serif;
+    color: darkgrey;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.post-pet-section h3 {
+    font-family: "Varela Round", sans-serif;
+    color: orange;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.post-pet-section label {
+    font-family: "Varela Round", sans-serif;
+    color: orange;
+    font-weight: bold;
+    display: block;
+}
+
+.input-box {
+    display: flex;
+    
+    align-items: center;
+}
+
+.post-pet-section input[type="text"],
+.post-pet-section input[type="email"],
+.post-pet-section input[type="tel"],
+.post-pet-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 7px 0;
+    margin-left: 10px;
+}
+
+.post-pet-section textarea {
+    resize: vertical;
+}
+
+.filter-selection-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.filter-selection-service select {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    margin: 10px 0;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 8px;
+    color: white;
+    background-color: orange;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: orange;
+    color:white;
+    text-decoration: none;
+    border-radius: 100px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: hoverorange;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+/* Hide the default file input */
+.file-input  {
+  display: none;
+}
+
+/* Make the span look like a button */
+.file-input-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.file-input-text {
+  
+  padding: 10px 18px;
+  background-color: orange; /* blue */
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.file-input-text:hover {
+  background-color:rgb(227, 148, 2) /* darker blue */
+}
+
+
+.input-box h3{
+    text-align: left;
+    font-weight: bold;
+}
+.input-box label,
+.filter-selection-service label {
+  width: 150px;        
+  text-align: left;
+  font-family: "Varela Round", sans-serif;
+  color: orange;
+  font-weight: bold;
+  white-space: nowrap;   /* prevents "Pet Age" from wrapping */
+}

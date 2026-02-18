@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+backend/node_modules/
+
+# build output
+dist/
+build/
+.vite/
+
+# env files
+.env
+.env.*
+
+# OS junk
+.DS_Store
+Thumbs.db
